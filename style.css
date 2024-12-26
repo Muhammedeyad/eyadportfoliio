@@ -1539,3 +1539,127 @@ body {
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sample */
+/* Mobile View (for devices smaller than 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        background-size: cover; /* Ensure background is still covering the section */
+        margin-bottom: 7rem;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        order: -1; /* Display the image first */
+    }
+
+    .main-content {
+        order: 1; /* Ensure text appears after the image */
+    }
+
+    .main-content h4,
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .social {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .main-btn {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main-btn .btn {
+        margin-bottom: 1rem;
+    }
+
+    .about-img img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Mobile View (for devices smaller than 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        background-size: cover; /* Ensure background is still covering the section */
+        margin-bottom: 7rem;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        order: -1; /* Display the image first */
+    }
+
+    .main-content {
+        order: 1; /* Ensure text appears after the image */
+    }
+
+    .main-content h4,
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .social {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .main-btn {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main-btn .btn {
+        margin-bottom: 1rem;
+    }
+
+    .about-img img {
+        width: 60% !important; /* Reduce the size of the image */
+        max-width: 200px; /* Optional: Limit the maximum width */
+        margin-top: 20px;
+        border-width: 5px; /* Optional: Reduce border thickness */
+    }
+}
