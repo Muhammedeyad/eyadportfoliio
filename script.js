@@ -113,3 +113,31 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleProjectsBtn.style.display = "none";
   }
 });
+
+
+
+
+
+
+
+// Ensure the page is loaded before applying scroll behavior
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all navigation links
+  const links = document.querySelectorAll(".navlist a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent the default anchor behavior
+
+      // Get the target section ID from the href attribute
+      const targetID = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetID);
+
+      // Scroll to the target element with an offset of 50px (or adjust to your liking)
+      window.scrollTo({
+        top: targetElement.offsetTop - 50, // Adjust this value to control the extra space
+        behavior: "smooth" // Smooth scrolling
+      });
+    });
+  });
+});
